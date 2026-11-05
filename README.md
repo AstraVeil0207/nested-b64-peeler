@@ -9,3 +9,10 @@ Attackers often hide shell code like this:
 ```bash
 echo "BASE64_PAYLOAD" | base64 -d | bash
 printf %s "BASE64_PAYLOAD" | base64 --decode | sh
+
+```
+# Basic usage
+python3 decode_nested_b64.py payload.txt
+
+# Custom output file, preview first 20 lines
+python3 decode_nested_b64.py payload.txt -o result.txt --show 20
